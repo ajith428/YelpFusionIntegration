@@ -1,2 +1,9 @@
 server:
   port: 9100
+
+yelp:
+  fusion:
+    api:
+      url: https://api.yelp.com/v3/
+      key: 8fM7aK6w9lPvAOTIxUBS7gjou-C8GLyp1rIa9lq9l9pL-T5JzApgUqgyl6N2rIIRgHBLSAF-fdRknE1Ye4-s_aGM4q2sXfN70cMbj9IjfmHSFjkgY6lJQe4mjdZqYnYx
+      clientId: -ILGXVP3nMaJfgJ6i0V7_A
