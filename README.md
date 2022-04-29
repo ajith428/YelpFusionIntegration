@@ -1,2 +1,2 @@
 # YelpFusionIntegration
-Integrated external Yelp Fusion API
+Integrate external Yelp Fusion API
