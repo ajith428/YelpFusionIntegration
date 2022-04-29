@@ -1,6 +1,6 @@
 package com.garrsolutions.yelpfusionintegration.controller;
 
-import com.garrsolutions.yelpfusionintegration.model.YelpModel;
+import com.garrsolutions.yelpfusionintegration.model.BusinessReviews;
 import com.garrsolutions.yelpfusionintegration.service.YelpFusionService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -23,9 +23,9 @@ public class YelpFusionController {
     }
 
     @GetMapping("reviews")
-    public ResponseEntity<YelpModel> getStoreLocationReviews(@RequestParam Map<String, String> queryParams) {
-        YelpModel yelpModel = yelpFusionService.getStoreLocationReviews(queryParams);
-        return ResponseEntity.ok(yelpModel);
+    public ResponseEntity<BusinessReviews> getStoreLocationReviews(@RequestParam Map<String, String> queryParams) {
+        BusinessReviews businessReviews = yelpFusionService.getReviews(queryParams);
+        return ResponseEntity.ok(businessReviews);
     }
 
 }
